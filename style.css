@@ -147,3 +147,106 @@ body {
   left: -50px;
   top: -20px;
 }
+
+.bb8-head {
+  width: 160px;
+  height: 160px;
+  background: fade-out(pink, 0.5);
+  position: absolute;
+  top: -70px;
+  left: -30px;
+  transform: rotate(-30deg);
+}
+
+.head-top {
+  width: 160px;
+  height: 160px;
+  background: var(--base);
+  border: solid 8px var(--stroke);
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: -10px 0px 0px 5px rgba(0, 0, 0, 0.2) inset;
+}
+
+.head-top-crop {
+    height: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.lens {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: solid 8px var(--stroke);
+  background: #295a6d;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  margin-left: -28px;
+  overflow: hidden;
+}
+
+.lens::after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 70px;
+    background: #2A6B80;
+    position: absolute;
+    left: 10px;
+    top: -20px;
+    transform: rotate(40deg);
+}
+
+.lens::after {
+    width: 10px;
+    left: 25px;
+    top: -10px;
+}
+
+.freckle {
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background: var(--stroke);
+    top: 60px;
+    left: 120px;
+    position: absolute;
+}
+
+.head-bottom {
+    position: absolute;
+    width: 100%;
+    top: 80px;
+}
+
+.head-bottom-base, .head-side-1, .head-side-2 {
+    border-bottom: 8px solid var(--stroke);
+    background: var(--base-tint);
+    height: 20px;
+    position: absolute;
+}
+
+.head-bottom-base {
+    width: 78%;
+    left: 11%;
+}
+
+.head-side-1{
+    width: 30px;
+  transform: rotate(40deg);
+  transform-origin: bottom left;
+  top: -16px;
+  left: -3px;
+  border-radius: 0px 0px 8px 8px;
+}
+
+.head-side-2 {
+    width: 30px;
+    transform: rotate(-40deg);
+    transform-origin: bottom right;
+    top: -16px;
+    right: -3px;
+    border-radius: 0px 0px 8px 8px;
+}
