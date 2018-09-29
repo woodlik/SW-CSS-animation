@@ -412,3 +412,119 @@ body {
 .sparkles > div.pulse-3 {
     animation: pulse 1s 900ms linear infinite;
 }
+
+.ground > div {
+    height: 8px;
+    width: 80px;
+    background: var(--stroke);
+    position: absolute;
+    top: 212px;
+    left: -90px;
+    border-radius: 8px;
+}
+.ground > div.one .bump {
+    left: 40px;
+}
+.ground > div.two {
+    width: 25px;
+    left: -1px;
+}
+.ground > div.three {
+    width: 300px;
+    left: 34px;
+}
+.ground > div.four {
+    width: 90px;
+    left: 346px;
+}
+.ground > div.four .bump {
+    left: 10px;
+}
+.ground > div.five {
+    width: 20px;
+    left: 450px;
+}
+.ground > div.six {
+    width: 80px;
+    left: 11px;
+    top: 255px;
+}
+.ground > div.six .bump {
+    left: 10px;
+}
+.ground > div.seven {
+    width: 127px;
+    left: 171px;
+    top: 255px;
+}
+.ground > div.seven .bump {
+    left: 60px;
+}
+.ground > div.eight {
+    width: 87px;
+    left: 71px;
+    top: 295px;
+}
+.ground > div.eight .bump {
+    left: 30px;
+}
+.ground > div .bump {
+    height: 15px;
+    width: 30px;
+    position: absolute;
+    top: -7px;
+    overflow: hidden;
+    animation: move 0.5s linear infinite;
+}
+.ground > div .bump.move-1 {
+    animation: move 0.5s 350ms linear infinite;
+}
+.ground > div .bump.move-2 {
+    animation: move 0.5s 700ms linear infinite;
+}
+.ground > div .bump:after {
+    content: "";
+    display: block;
+    height: 30px;
+    width: 30px;
+    border: 8px solid var(--stroke);
+    border-radius: 50%;
+    background: var(--bg);
+    box-sizing: border-box;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    90% {
+        transform: scale(0.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes move {
+    0% {
+        left: 5%;
+        transform: scale(0);
+    }
+    10% {
+        transform: scale(1);
+    }
+    90% {
+        transform: scale(1);
+    }
+    100% {
+        left: 55%;
+        transform: scale(0);
+    }
+}
