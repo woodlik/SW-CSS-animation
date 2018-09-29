@@ -6,6 +6,7 @@
     --orange: #fdc23e;
     --blue: #449baa;
     --red: #ff7761;
+    --lens: #2a6b80;
 }
 body {
     background: #eee;
@@ -42,7 +43,7 @@ body {
     border-radius: 50%;
     border: solid 8px var(--stroke);
     overflow: hidden;
-    animation: spin 1.5s linear infinite;
+    animation: spin 1.4s linear infinite;
 }
 
 .circle {
@@ -113,7 +114,7 @@ body {
 .line-1 {
     transform: rotate(40deg);
     top: 40px;
-    left: -70px;
+    left: -60px;
 }
 
 .line-2 {
@@ -154,8 +155,8 @@ body {
     background: fade-out(pink, 0.5);
     position: absolute;
     top: -70px;
-    left: -30px;
-    transform: rotate(-30deg);
+    left: 80px;
+    transform: rotate(30deg);
 }
 
 .head-top {
@@ -192,7 +193,7 @@ body {
     display: block;
     width: 6px;
     height: 70px;
-    background: #2a6b80;
+    background: var(--lens);
     position: absolute;
     left: 10px;
     top: -20px;
@@ -274,30 +275,30 @@ body {
     border-radius: 8px;
     background: var(--stroke);
     position: absolute;
-    left: 100%;
-    margin-left: 5px;
+    right: 100%;
+    margin-right: 10px;
 }
 .speedlines > div.one {
     top: -60px;
-    left: 53px;
+    left: 85px;
 }
 .speedlines > div.two {
     top: -21px;
-    left: 113px;
+    left: 43px;
 }
 .speedlines > div.three {
     top: -10px;
-    left: 103px;
+    left: 83px;
     width: 30px;
 }
 .speedlines > div.four {
     top: 121px;
-    left: 203px;
+    left: -15px;
     width: 30px;
 }
 .speedlines > div.five {
     top: 141px;
-    left: 218px;
+    left: -55px;
     width: 50px;
 }
 
@@ -338,67 +339,67 @@ body {
 }
 .sparkles > div.one {
     top: -53px;
-    left: 140px;
+    left: 30px;
 }
 .sparkles > div.two {
     top: -46px;
-    left: 210px;
+    left: -30px;
 }
 .sparkles > div.three {
     top: -6px;
-    left: 186px;
+    left: -10px;
 }
 .sparkles > div.four {
     top: -16px;
-    left: 280px;
+    left: -60px;
 }
 .sparkles > div.five {
     top: 44px;
-    left: 230px;
+    left: -50px;
 }
 .sparkles > div.six {
     top: 94px;
-    left: 240px;
+    left: -90px;
 }
 .sparkles > div.seven {
     top: 154px;
-    left: 216px;
+    left: -57px;
 }
 .sparkles > div.eight {
-    top: 187px;
-    left: 185px;
+    top: 177px;
+    left: -33px;
 }
 .sparkles > div.nine {
     top: 63px;
-    left: 325px;
+    left: -170px;
 }
 .sparkles > div.ten {
     top: 124px;
-    left: 315px;
+    left: -140px;
 }
 .sparkles > div.eleven {
     top: 161px;
-    left: 294px;
+    left: -105px;
 }
 .sparkles > div.twelve {
     top: 27px;
-    left: 366px;
+    left: -80px;
 }
 .sparkles > div.thirteen {
     top: 37px;
-    left: 415px;
+    left: -103px;
 }
 .sparkles > div.fourteen {
     top: 87px;
-    left: 385px;
+    left: -105px;
 }
 .sparkles > div.fifteen {
     top: 137px;
-    left: 378px;
+    left: -109px;
 }
 .sparkles > div.sixteen {
     top: 97px;
-    left: 455px;
+    left: -183px;
 }
 .sparkles > div.pulse {
     animation: pulse 1s linear infinite;
@@ -495,10 +496,10 @@ body {
 
 @keyframes spin {
     0% {
-        transform: rotate(360deg);
+        transform: rotate(0deg);
     }
     100% {
-        transform: rotate(0deg);
+        transform: rotate(360deg);
     }
 }
 @keyframes pulse {
@@ -514,7 +515,7 @@ body {
 }
 @keyframes move {
     0% {
-        left: 5%;
+        left: 85%;
         transform: scale(0);
     }
     10% {
@@ -524,7 +525,7 @@ body {
         transform: scale(1);
     }
     100% {
-        left: 55%;
+        left: 25%;
         transform: scale(0);
     }
 }
